@@ -1,0 +1,22 @@
+.btn{
+    border: none;
+    border-radius: 2px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-family: $robotoFont;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 21px;
+    color: $white;
+    transition: 0.3s;
+    &.btn-link{
+        background-color: $themeColor;
+        color: $white;
+        transition: 0.3s;
+        &:hover{
+            background-color: $hoverColor;
+            color: $white;
+        }
+    }
+}

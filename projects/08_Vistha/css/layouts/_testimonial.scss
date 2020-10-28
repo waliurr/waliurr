@@ -1,0 +1,114 @@
+.single-testi{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testi-image{
+    flex-basis: 40%;
+    padding: 25px;
+    img{
+        width: 100%;
+    }
+}
+
+.testi-text{
+    flex-basis: 50%;
+    padding-right: 25px;
+    margin: auto 0;
+    h3{
+        font-size: 20px;
+        font-weight: 400;
+        color: $textColor;
+        margin-bottom: 5px;
+    }
+    h2{
+        text-transform: capitalize;
+        font-size: 40px;
+        font-weight: 800;
+        color: $themeColor;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        color: #888;
+    }
+}
+
+.testi-client{
+    margin-top: 25px;
+    h4{
+        font-style: italic;
+        font-size: 19px;
+        font-weight: 400;
+        color: $themeColor;
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: rgba(0, 51, 121, 0.15);
+        border-radius: 0 5px 5px 0;
+        border-left: 5px solid $themeColor;
+        i{
+            margin-right: 5px;
+        }
+    }
+}
+
+/*--- slick dots style ---*/
+.slick-dots{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    li button{
+        display: none;
+    }
+    li{
+        margin: 0 7px;
+        width: 10px;
+        height: 10px;
+        border-radius: 30px;
+        background-color: #D6D6D6;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            background-color: $bgColor;
+        }
+        &.slick-active{
+            width: 20px;
+            background-color: $bgColor;
+        }
+    }
+}
+
+@include breakpointWidth(991px){
+    .single-testi{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .testi-text{
+        margin: 20px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .slick-dots{
+        bottom: -30px;
+    }
+}
+
+@include breakpointWidth(480px){
+    .testi-text{
+        h3{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}

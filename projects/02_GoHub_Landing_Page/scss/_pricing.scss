@@ -1,0 +1,279 @@
+#pricing{
+    position: relative;
+    overflow: hidden;
+
+    .bg-pricing{
+        .bg-pricing-img{
+            position: absolute;
+            top: 3%;
+            width: 60%;
+        }
+        .bg-pricing-img:nth-child(1){ 
+            right: -17%;
+            opacity: 0.2; 
+        }
+        .bg-pricing-img:nth-child(2){ 
+            right: -23%;
+        }
+    }
+}
+
+.pricing-top{
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-heading{
+    width: 63%;
+    margin-bottom: 70px;
+
+    h2{
+        @include textStyle(48px, 300, $themeColorMartinique);
+        margin-bottom: 50px;
+    }
+    p{
+        @include textStyle(23px, 300, $themeColorBlueBayoux);
+    }
+}
+
+.pricing-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-pricing{
+    margin-top: 80px;
+
+    h2{
+        @include textStyle(30px, 400, $themeColorMartinique);
+        margin-bottom: 30px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    ul li{
+        padding: 15px 0px;
+    }
+    ul li img{
+        margin-right: 15px;
+    }
+    ul li{
+        @include textStyle(18px, 300, $themeColorMartinique);
+    }
+}
+
+@include breakpointWidth(1199px){
+    #pricing{
+        .bg-pricing{
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    .pricing-top{
+        flex-direction: column;
+    }
+    
+    .pricing-heading{
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    
+        h2{
+            @include textStyle(48px, 300, $themeColorMartinique);
+            margin-bottom: 40px;
+        }
+        p{
+            @include textStyle(20px, 300, $themeColorBlueBayoux);
+        }
+    }
+    .pricing-bottom{
+        flex-direction: column;
+    }
+    
+    .single-pricing{
+        width: 70%;
+        margin: 60px auto 0px;
+    
+        h2{
+            @include textStyle(30px, 400, $themeColorMartinique);
+            margin-bottom: 25px;
+        }
+    
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        ul li{
+            padding: 10px 0px;
+        }
+        ul li img{
+            margin-right: 15px;
+        }
+        ul li{
+            @include textStyle(18px, 300, $themeColorMartinique);
+        }
+    }
+}
+
+@include breakpointWidth(991px){
+    .pricing-heading{
+        margin-bottom: 30px;
+    
+        h2{
+            @include textStyle(40px, 300, $themeColorMartinique);
+            margin-bottom: 30px;
+        }
+        p{
+            @include textStyle(18px, 300, $themeColorBlueBayoux);
+        }
+    }
+    .single-pricing{
+        width: 80%;
+        margin: 40px auto 0px;
+    
+        h2{
+            @include textStyle(25px, 400, $themeColorMartinique);
+            margin-bottom: 20px;
+        }
+    
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        ul li{
+            padding: 10px 0px;
+        }
+        ul li img{
+            margin-right: 15px;
+        }
+        ul li{
+            @include textStyle(16px, 300, $themeColorMartinique);
+        }
+    }
+}
+
+@include breakpointWidth(767px){
+    .pricing-heading{
+        margin-bottom: 30px;
+    
+        h2{
+            @include textStyle(35px, 300, $themeColorMartinique);
+            margin-bottom: 25px;
+        }
+        p{
+            @include textStyle(16px, 300, $themeColorBlueBayoux);
+        }
+    }
+    .single-pricing{
+        width: 100%;
+        margin: 40px auto 0px;
+    
+        h2{
+            @include textStyle(20px, 400, $themeColorMartinique);
+            margin-bottom: 20px;
+        }
+    
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        ul li{
+            padding: 10px 0px;
+        }
+        ul li img{
+            margin-right: 15px;
+        }
+        ul li{
+            @include textStyle(16px, 300, $themeColorMartinique);
+        }
+    }
+}
+
+@include breakpointWidth(500px){
+    .pricing-heading{
+        margin-bottom: 30px;
+    
+        h2{
+            @include textStyle(30px, 300, $themeColorMartinique);
+            margin-bottom: 25px;
+        }
+        p{
+            @include textStyle(16px, 300, $themeColorBlueBayoux);
+        }
+    }
+    .single-pricing{
+        width: 100%;
+        margin: 40px auto 0px;
+    
+        h2{
+            @include textStyle(18px, 400, $themeColorMartinique);
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@include breakpointWidth(450px){
+    .pricing-heading{
+        margin-bottom: 30px;
+    
+        h2{
+            @include textStyle(25px, 300, $themeColorMartinique);
+            margin-bottom: 20px;
+        }
+        p{
+            @include textStyle(15px, 300, $themeColorBlueBayoux);
+        }
+    }
+    .single-pricing{
+        width: 100%;
+        margin: 40px auto 0px;
+    
+        h2{
+            @include textStyle(16px, 400, $themeColorMartinique);
+            margin-bottom: 20px;
+        }
+        ul li{
+            padding: 5px 0px;
+        }
+        ul li img{
+            margin-right: 10px;
+        }
+        ul li{
+            @include textStyle(15px, 300, $themeColorMartinique);
+        }
+    }
+}
+
+@include breakpointWidth(400px){
+    .pricing-heading{
+        margin-bottom: 20px;
+    
+        h2{
+            @include textStyle(18px, 300, $themeColorMartinique);
+            margin-bottom: 15px;
+        }
+        p{
+            @include textStyle(14px, 300, $themeColorBlueBayoux);
+        }
+    }
+    .single-pricing{
+        width: 100%;
+        margin: 20px auto 0px;
+    
+        h2{
+            @include textStyle(15px, 400, $themeColorMartinique);
+            margin-bottom: 20px;
+        }
+        ul li{
+            padding: 5px 0px;
+        }
+        ul li img{
+            margin-right: 10px;
+        }
+        ul li{
+            @include textStyle(14px, 300, $themeColorMartinique);
+        }
+    }
+}

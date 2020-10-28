@@ -1,0 +1,33 @@
+.single-skill{
+    text-align: center;
+}
+
+.pie-title-center {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    .pie-value {
+        display: block;
+        position: absolute;
+        font-size: 42px;
+        font-weight: 300;
+        color: #3c4761;
+        height: 40px;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin-top: -20px;
+        line-height: 40px;
+    }
+}
+
+.skill-text{
+    margin-top: 20px;
+    h2{
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        color: $titleColor;
+        letter-spacing: 1px;
+    }
+}
