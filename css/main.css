@@ -134,12 +134,12 @@ img {
 }
 
 ::-moz-selection {
-  background-color: #e54b4b;
+  background-color: #8492a6;
   color: #ffffff;
 }
 
 ::selection {
-  background-color: #e54b4b;
+  background-color: #8492a6;
   color: #ffffff;
 }
 
@@ -186,8 +186,8 @@ img {
 
 .loader-dot {
   margin: 0 5px;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #e54b4b;
   -webkit-animation: loader 2s infinite;
@@ -1209,8 +1209,44 @@ h6 {
   letter-spacing: 0.5px;
 }
 
+.about-info {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-item p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #3c4858;
+  line-height: 27px;
+}
+
+.about-item p span {
+  margin-left: 5px;
+}
+
 .about-button {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .about-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -2040,6 +2076,135 @@ h6 {
   }
   .blog-meta ul li {
     margin: 0 10px;
+  }
+}
+
+/*-------------------------
+05. Timeline style
+-------------------------*/
+.single-timeline {
+  margin-top: 30px;
+  position: relative;
+}
+
+.single-timeline::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1px;
+  height: 105%;
+  background-color: #8492a6;
+}
+
+.single-timeline::after {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #8492a6;
+}
+
+.timeline-date {
+  margin-top: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 24px;
+  border: 1px solid #e9ecef;
+  border-radius: 7px;
+  background-color: #f8f9fa;
+  -webkit-box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+          box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+}
+
+.timeline-date h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #161c2d;
+  line-height: 22.5px;
+}
+
+.timeline-text {
+  margin-top: 10px;
+  padding: 24px;
+  border: 1px solid #e9ecef;
+  border-radius: 7px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.timeline-text:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+          box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+}
+
+.timeline-text:hover h2 {
+  color: #e54b4b;
+}
+
+.timeline-text h2 {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  color: #161c2d;
+  line-height: 27px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.timeline-text h3 {
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #161c2d;
+  line-height: 19.5px;
+  margin-bottom: 16px;
+}
+
+.timeline-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8492a6;
+  line-height: 25.2px;
+  letter-spacing: 0.42px;
+}
+
+@media screen and (max-width: 767px) {
+  .single-timeline::before {
+    left: 10px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .single-timeline::after {
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .timeline-date, .timeline-text {
+    margin-left: 20px;
+  }
+  .timeline-date.float-right {
+    float: left !important;
+  }
+  .timeline-text.text-right {
+    text-align: left !important;
+  }
+  .timeline-text h2 {
+    font-size: 16px;
   }
 }
 

@@ -52,7 +52,7 @@ img{
 }
 
 ::selection{
-    background-color: $themeColor;
+    background-color: $bodyColor;
     color: $white;
 }
 
@@ -87,8 +87,8 @@ img{
 
 .loader-dot{
     margin: 0 5px;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: $themeColor;
     animation: loader 2s infinite;

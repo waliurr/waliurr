@@ -58,8 +58,34 @@
     }
 }
 
+.about-info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-item{
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        color: $textColor;
+        line-height: 27px;
+        span{
+            margin-left: 5px;
+        }
+    }
+}
+
 .about-button{
     margin-top: 30px;
+}
+
+@include breakpointWidth(1199px){
+    .about-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 @include breakpointWidth(991px){
