@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vistha | Software Company Landing Page</title>
+    <title>Waliur | Welcome To My Portfolio site</title>
     
     <!-- Favicon included -->
-    <link rel="shortcut icon" href="images/icon/fav.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon/favicon.ico" type="image/x-icon">
     
     <!-- Apple touch icon included -->
-    <link rel="apple-touch-icon" href="images/icon/fav.png">
+    <link rel="apple-touch-icon" href="images/icon/favicon.ico">
     
     <!-- All CSS files are icluded here -->
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/animated-headline.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/main.css">
     
 </head>
@@ -24,40 +29,56 @@
     <!-- Preloader section start -->
     <div id="preloader-area">
         <div class="loader-content">
-            <div class="loader-dot dot-one"></div>
-            <div class="loader-dot dot-two"></div>
-            <div class="loader-dot dot-three"></div>
+            <div class="loader-log">
+                <img src="images/icon/logo.png" alt="Logo">
+            </div>
+            <div class="loader-shape">
+                <div class="loader-dot"></div>
+                <div class="loader-dot"></div>
+                <div class="loader-dot"></div>
+            </div>
         </div>
     </div>
     <!-- Preloader section end -->
     <!-- Header section start -->
-    <header id="header-area" class="fixed-top">
+    <header id="header-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="#">
-                            <img src="images/icon/logo.png" alt="images">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/icon/logo.png" alt="Logo">
                         </a>
                         
-                        <a class="navbar-toggler">
-                            <i class="ti-layout-grid2"></i>
-                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                        </button>
                         
-                        <div id="navbar-content" class="collapse navbar-collapse justify-content-end">
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                             <ul class="navbar-nav main-menu">
-                                <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#about-area">About us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#services-area">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#pricing-area">Pricing</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#blog-area">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#testimonial-area">Testimonials</a></li>
+                                <li><a href="#page-top">Home</a></li>
+                                <li><a href="#services-area">Services</a></li>
+                                <li><a href="#skill-area">Resume</a></li>
+                                <li><a href="#portfolio-area">Projects</a></li>
+                                <li><a href="#blog-area">Blog</a></li>
+                                <li><a href="#contact-area">Contact</a></li>
                             </ul>
-                            <ul class="header-button">
-                                <a href="#contact-area" class="btn btn-link">
-                                    <i class="ti-arrow-right"></i>
-                                    Contact
-                                </a>
+                            <ul class="header-social-link">
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100004227857493" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/waliurrahaman8" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/waliur-rahaman" target="_blank">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -67,33 +88,37 @@
     </header>
     <!-- Header section end -->
     <!-- Slider section start -->
-    <div id="slider-area" class="standard-section section-slider">
+    <div id="slider-area" class="section-slider">
+        <div class="scroll-down">
+            <a href="#about-area">
+                <div class="down-icon"></div>
+            </a>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 order-lg-1 order-2">
+                <div class="col-md-12">
                     <div class="slider-content">
                         <div class="slider-text">
-                            <h2>Vistha Software Development Company.</h2>
+                            <h3>Looking for a Designer !</h3>
+                            <h2 class="cd-headline letters rotate-3">
+                                I'm 
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">Designer</b>
+                                    <b>Developer</b>
+                                </span>
+                            </h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam optio incidunt
+                                in dolorem fugit pariatur dicta et, quia beatae quos eligendi unde provident.
                             </p>
                         </div>
-                        <div class="slider-button-group">
-                            <a href="#" class="btn btn-link">
-                                <i class="ti ti-settings"></i>
-                                Our services
-                            </a>
+                        <div class="slider-button">
+                            <a href="#" class="btn btn-link">Hire me</a>
                             <a href="#" class="btn btn-border">
-                                <i class="ti ti-arrow-right"></i>
-                                Contact us
+                                Download CV
+                                <i class="fa fa-download"></i>
                             </a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 order-lg-2 order-1">
-                    <div class="slider-image">
-                        <img src="images/bg/banner-2.svg" alt="image">
                     </div>
                 </div>
             </div>
@@ -103,33 +128,28 @@
     <!-- Main section start -->
     <section id="main-section">
         <!-- About section start -->
-        <div id="about-area" class="standard-section section-about">
+        <div id="about-area" class="standard-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 d-lg-block d-none">
+                    <div class="col-lg-6 col-md-12">
                         <div class="about-image">
-                            <img src="images/bg/about-2.svg" alt="image">
+                            <a href="images/bg/hero.png" data-lightbox="about-image" data-title="Waliur Rahaman">
+                                <img src="images/bg/hero.png" alt="image">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 offset-lg-1">
+                    <div class="col-lg-6 col-md-12 d-flex align-items-center">
                         <div class="about-content">
                             <div class="about-text">
-                                <h3>About Vistha</h3>
-                                <h2>Software Development Company</h2>
+                                <h2>Waliur rahaman</h2>
+                                <h3><span>I'm a Passionate</span> Front End Web Developer</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Etiam orci est, accumsan eu gravida sed, euismod eget erat. 
-                                    Donec a consequat felis, in tristique nisl. Proin justo est,
-                                    semper at maximus a, pharetra et ligula. Mauris quis sem erat. 
-                                    Sed pulvinar, lectus in ultricies elementum, eros arcu 
-                                    congue dolor, sed fermentum ex arcu a ante. 
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex adipisci ea, dicta tempore illum perferendis vitae omnis, 
+                                    atque debitis iste alias cupiditate minima repellat aperiam magni a aliquid vel delectus.
                                 </p>
                             </div>
                             <div class="about-button">
-                                <a href="#" class="btn btn-link">
-                                    <i class="ti ti-support"></i>
-                                    services
-                                </a>
+                                <a href="#portfolio-area" class="btn btn-link">View Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -137,17 +157,207 @@
             </div>
         </div>
         <!-- About section end -->
-        <!-- Services section start -->
-        <div id="services-area" class="standard-section">
+        <!-- Interests section start -->
+        <div id="interest-area" class="standard-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="area-heading">
-                            <h3>Vistha software</h3>
-                            <h2>Software services</h2>
+                            <h2>Hobies & Interests</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Etiam orci est, accumsan eu gravida sed, euismod eget erat.
+                                Obviously I'm a Web Designer. Experienced with all stages of the development
+                                cycle for dynamic web projects. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-desktop"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>Developing</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-pencil-square-o"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>Painting</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-video-camera"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>Cinema</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-coffee"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>coffee</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-music"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>Music</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>Reading</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>Writing</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-gamepad"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>sports</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>Reading</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>Writing</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-gamepad"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>sports</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-interest">
+                            <div class="interest-icon">
+                                <i class="fa fa-exchange"></i>
+                            </div>
+                            <div class="interest-text">
+                                <h2>others</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Interests section end -->
+        <!-- Counter seciton start -->
+        <div id="counter-area" class="standard-section section-counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-counter">
+                            <div class="counter-icon">
+                                <i class="fa fa-smile-o"></i>
+                            </div>
+                            <div class="counter-text">
+                                <h2 class="counter">1251</h2>
+                                <p>Happy client</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-counter">
+                            <div class="counter-icon">
+                                <i class="fa fa-trophy"></i>
+                            </div>
+                            <div class="counter-text">
+                                <h2 class="counter">15</h2>
+                                <p>Award won</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-counter">
+                            <div class="counter-icon">
+                                <i class="fa fa-coffee"></i>
+                            </div>
+                            <div class="counter-text">
+                                <h2 class="counter">3261</h2>
+                                <p>Cup of coffee</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-counter">
+                            <div class="counter-icon">
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </div>
+                            <div class="counter-text">
+                                <h2 class="counter">36</h2>
+                                <p>Project complete</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Counter seciton end -->
+        <!-- Services section start -->
+        <div id="services-area" class="standard-section section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="area-heading">
+                            <h2>What do i offer?</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci est, accumsan eu gravida
+                                sed, euismod eget erat. 
                             </p>
                         </div>
                     </div>
@@ -155,67 +365,103 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-service">
-                            <div class="service-image">
-                                <i class="ti-layout"></i>
+                            <div class="service-icon">
+                                <i class="fa fa-laptop"></i>
                             </div>
                             <div class="service-text">
-                                <h2>Web Development</h2>
-                                <p>Mauris quis sem erat. Sed pulvinar, lectus in ultricies elementum.</p>
+                                <h2>Web design</h2>
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the
+                                    when looking at its layout.
+                                </p>
+                            </div>
+                            <div class="service-bottom">
+                                <i class="fa fa-laptop"></i>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-service">
-                            <div class="service-image">
-                                <i class="ti-mobile"></i>
+                            <div class="service-icon">
+                                <i class="fa fa-desktop"></i>
                             </div>
                             <div class="service-text">
-                                <h2>Android apps</h2>
-                                <p>Mauris quis sem erat. Sed pulvinar, lectus in ultricies elementum.</p>
+                                <h2>Web developement</h2>
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the
+                                    when looking at its layout.
+                                </p>
+                            </div>
+                            <div class="service-bottom">
+                                <i class="fa fa-desktop"></i>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-service">
-                            <div class="service-image">
-                                <i class="ti-location-arrow"></i>
+                            <div class="service-icon">
+                                <i class="fa fa-mobile"></i>
                             </div>
                             <div class="service-text">
-                                <h2>Online booking</h2>
-                                <p>Mauris quis sem erat. Sed pulvinar, lectus in ultricies elementum.</p>
+                                <h2>Fully responsive</h2>
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the
+                                    when looking at its layout.
+                                </p>
+                            </div>
+                            <div class="service-bottom">
+                                <i class="fa fa-mobile"></i>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-service">
-                            <div class="service-image">
-                                <i class="ti-shopping-cart"></i>
+                            <div class="service-icon">
+                                <i class="fa fa-columns"></i>
                             </div>
                             <div class="service-text">
-                                <h2>eCommerce Services</h2>
-                                <p>Mauris quis sem erat. Sed pulvinar, lectus in ultricies elementum.</p>
+                                <h2>Clean code</h2>
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the
+                                    when looking at its layout.
+                                </p>
+                            </div>
+                            <div class="service-bottom">
+                                <i class="fa fa-columns"></i>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-service">
-                            <div class="service-image">
-                                <i class="ti-shield"></i>
+                            <div class="service-icon">
+                                <i class="fa fa-cogs"></i>
                             </div>
                             <div class="service-text">
-                                <h2>Network Support</h2>
-                                <p>Mauris quis sem erat. Sed pulvinar, lectus in ultricies elementum.</p>
+                                <h2>Custom support</h2>
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the
+                                    when looking at its layout.
+                                </p>
+                            </div>
+                            <div class="service-bottom">
+                                <i class="fa fa-cogs"></i>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-service">
-                            <div class="service-image">
-                                <i class="ti-cloud-up"></i>
+                            <div class="service-icon">
+                                <i class="fa fa-clock-o"></i>
                             </div>
                             <div class="service-text">
-                                <h2>Cloud Solutions</h2>
-                                <p>Mauris quis sem erat. Sed pulvinar, lectus in ultricies elementum.</p>
+                                <h2>24/7</h2>
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the
+                                    when looking at its layout.
+                                </p>
+                            </div>
+                            <div class="service-bottom">
+                                <i class="fa fa-clock-o"></i>
                             </div>
                         </div>
                     </div>
@@ -223,252 +469,384 @@
             </div>
         </div>
         <!-- Services section end -->
-        <!-- Pricing section start -->
-        <div id="pricing-area" class="section-pricing">
+        <!-- Skills section start -->
+        <div id="skill-area" class="standard-section section-skill">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="area-title">
-                            <h2>Pricing</h2>
-                            <h3>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Maecenas pellentesque ac lectus et semper. Nullam in nunc tortor.
-                            </h3>
+                        <div class="area-heading">
+                            <h2>My skills</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci est, accumsan eu gravida
+                                sed, euismod eget erat. 
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="pricing-content">
-                        <div class="single-pricing">
-                            <div class="pricing-top">
-                                <div class="pricing-image">
-                                    <img src="images/pricing/cycle.png" alt="image">
-                                </div>
-                                <div class="pricing-title">
-                                    <h2>Free</h2>
-                                </div>
-                            </div>
-                            <div class="pricing-list">
-                                <ul>
-                                    <li>Free applications</li>
-                                    <li><del>24X7 support</del></li>
-                                    <li><del>High quality design</del></li>
-                                    <li><del>Client location support</del></li>
-                                </ul>
-                            </div>
-                            <div class="pricing-button">
-                                <a href="#" class="btn btn-border">Register</a>
-                            </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <div class="skill-image">
+                            <img src="images/bg/skills-1.jpg" alt="image">
                         </div>
-                        <div class="single-pricing bg-theme">
-                            <div class="pricing-top">
-                                <div class="pricing-image">
-                                    <img src="images/pricing/scooter.png" alt="image">
+                    </div>
+                    <div class="col-lg-6 offset-lg-1 col-md-12">
+                        <div class="skill-content">
+                            <div class="single-skill">
+                                <div class="skill-title">
+                                    <h2>Html</h2>
                                 </div>
-                                <div class="pricing-title">
-                                    <h2>$1.99</h2>
-                                </div>
-                            </div>
-                            <div class="pricing-list">
-                                <ul>
-                                    <li>Unlimited quotations</li>
-                                    <li>24X7 support</li>
-                                    <li>High quality design</li>
-                                    <li><del>Client location support</del></li>
-                                </ul>
-                            </div>
-                            <div class="pricing-button">
-                                <a href="#" class="btn btn-link">Register</a>
-                            </div>
-                        </div>
-                        <div class="single-pricing">
-                            <div class="pricing-top">
-                                <div class="pricing-image">
-                                    <img src="images/pricing/car.png" alt="image">
-                                </div>
-                                <div class="pricing-title">
-                                    <h2>$4.99</h2>
+                                <div class="skill-bar">
+                                    <div class="progress-line" data-percent="90">90%</div>
                                 </div>
                             </div>
-                            <div class="pricing-list">
-                                <ul>
-                                    <li>Free applications</li>
-                                    <li>24X7 support</li>
-                                    <li>High quality design</li>
-                                    <li>Client location support</li>
-                                </ul>
+                            <div class="single-skill">
+                                <div class="skill-title">
+                                    <h2>css</h2>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="progress-line" data-percent="85">85%</div>
+                                </div>
                             </div>
-                            <div class="pricing-button">
-                                <a href="#" class="btn btn-border">Register</a>
+                            <div class="single-skill">
+                                <div class="skill-title">
+                                    <h2>Sass</h2>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="progress-line" data-percent="80">80%</div>
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="skill-title">
+                                    <h2>bootstrap</h2>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="progress-line" data-percent="80">80%</div>
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="skill-title">
+                                    <h2>Javascript</h2>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="progress-line" data-percent="40">40%</div>
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="skill-title">
+                                    <h2>jquery</h2>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="progress-line" data-percent="45">45%</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Pricing section end -->
-        <!-- Blog section start -->
-        <div id="blog-area" class="standard-section">
+        <!-- Skills section end -->
+        <!-- Portfolio section start -->
+        <div id="portfolio-area" class="standard-section section-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="area-heading">
-                            <h3>Vistha Blog</h3>
-                            <h2>Our latest blog</h2>
+                            <h2>Portfolio</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Etiam orci est, accumsan eu gravida sed, euismod eget erat.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci est, accumsan eu gravida
+                                sed, euismod eget erat. 
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <article class="single-blog">
-                            <div class="blog-thumbnail">
-                                <img src="images/blog/blog-1.jpg" alt="images">
+                    <div class="col-md-12">
+                        <div class="portfolio-content">
+                            <div id="filters" class="button-group"> 
+                                <button class="button is-checked" data-filter="*">all</button>
+                                <button class="button" data-filter=".cat-1">PSD to Html</button>
+                                <button class="button" data-filter=".cat-2">Single page</button>
+                                <button class="button" data-filter=".cat-3">Multipage</button>
+                                <button class="button" data-filter=".cat-4">Wordpress</button>
                             </div>
-                            <div class="blog-content">
-                                <div class="blog-title">
-                                    <a href="#">Mauris consequat tristique mi vel eleifend.</a>
-                                </div>
-                                <div class="blog-meta">
-                                    <div class="meta-item meta-date">
-                                        <a href="#">
-                                            <i class="ti-calendar"></i>
-                                            12 Mar 2020
-                                        </a>
+                            
+                            <div class="grid basic-grid-3">
+                                <div class="element-item cat-2" data-category="">
+                                    <div class="portfolio-image">
+                                        <img src="images/portfolio/totan.png" alt="image">
+                                        <div class="img-overlay">
+                                            <a href="images/portfolio/totan.png" data-lightbox="portfolio-gallery" data-title="Totan single page">
+                                                <i class="fa fa-image"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="meta-item meta-tag">
-                                        <a href="#">
-                                            Software
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <article class="single-blog">
-                            <div class="blog-thumbnail">
-                                <img src="images/blog/blog-2.jpg" alt="images">
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-title">
-                                    <a href="#">Mauris consequat tristique mi vel eleifend.</a>
-                                </div>
-                                <div class="blog-meta">
-                                    <div class="meta-item meta-date">
-                                        <a href="#">
-                                            <i class="ti-calendar"></i>
-                                            12 Mar 2020
-                                        </a>
-                                    </div>
-                                    <div class="meta-item meta-tag">
-                                        <a href="#">
-                                            News
+                                    <div class="portfolio-text">
+                                        <h2>totan</h2>
+                                        <a href="projects/09_Totan/index.html" target="_blank" class="btn btn-border">
+                                            Live preview
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <article class="single-blog">
-                            <div class="blog-thumbnail">
-                                <img src="images/blog/blog-3.jpg" alt="images">
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-title">
-                                    <a href="#">Mauris consequat tristique mi vel eleifend.</a>
-                                </div>
-                                <div class="blog-meta">
-                                    <div class="meta-item meta-date">
-                                        <a href="#">
-                                            <i class="ti-calendar"></i>
-                                            12 Mar 2020
-                                        </a>
+                                <div class="element-item cat-2" data-category="">
+                                    <div class="portfolio-image">
+                                        <img src="images/portfolio/vistha.png" alt="image">
+                                        <div class="img-overlay">
+                                            <a href="images/portfolio/vistha.png" data-lightbox="portfolio-gallery" data-title="Vistha single page">
+                                                <i class="fa fa-image"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="meta-item meta-tag">
-                                        <a href="#">
-                                            Tech
+                                    <div class="portfolio-text">
+                                        <h2>Vistha</h2>
+                                        <a href="projects/08_Vistha/index.html" target="_blank" class="btn btn-border">
+                                            Live preview
                                         </a>
                                     </div>
                                 </div>
+                                <div class="element-item cat-1 cat-2" data-category="">
+                                    <div class="portfolio-image">
+                                        <img src="images/portfolio/cuda.png" alt="image">
+                                        <div class="img-overlay">
+                                            <a href="images/portfolio/cuda.png" data-lightbox="portfolio-gallery" data-title="Cuda single page">
+                                                <i class="fa fa-image"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-text">
+                                        <h2>Cuda</h2>
+                                        <a href="projects/01_cuda/index.html" target="_blank" class="btn btn-border">
+                                            Live preview
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="element-item cat-1 cat-2" data-category="">
+                                    <div class="portfolio-image">
+                                        <img src="images/portfolio/gohub.png" alt="image">
+                                        <div class="img-overlay">
+                                            <a href="images/portfolio/gohub.png" data-lightbox="portfolio-gallery" data-title="Gohub single page">
+                                                <i class="fa fa-image"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-text">
+                                        <h2>Gohub</h2>
+                                        <a href="projects/02_GoHub_Landing_Page/index.html" target="_blank" class="btn btn-border">
+                                            Live preview
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </article>
+                        </div>
+                        <div class="portfolio-button">
+                            <a href="#" class="btn btn-border">
+                                Load more Projecs
+                                <i class="fa fa-spinner"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Blog section end -->
+        <!-- Portfolio section end -->
         <!-- Testimonial section start -->
-        <div id="testimonial-area" class="standard-section section-testimonial">
+        <div id="testimonial-area" class="standard-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="testimonial-content">
-                            <div class="testi-item">
-                                <div class="single-testi">
-                                    <div class="testi-image">
-                                        <img src="images/testimonial/testi-1.svg" alt="image">
-                                    </div>
-                                    <div class="testi-text">
-                                        <h3>Testimonials</h3>
-                                        <h2>Best software company</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla consectetur interdum.
-                                            Vestibulum vel sem malesuada, bibendum est at, luctus est. Mauris consequat tristique mi vel eleifend.
-                                        </p>
-                                        <div class="testi-client">
-                                            <h4>
-                                                <i class="ti-user"></i>
-                                                Somewone famous
-                                            </h4>
-                                        </div>
-                                    </div>
+                        <div class="area-heading">
+                            <h2>Clients say</h2>
+                            <p>
+                                Obviously I'm a Web Designer. Experienced with all stages of the development
+                                cycle for dynamic web projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="owl-carousel">
+                        <div class="single-testi">
+                            <div class="testi-review">
+                                <div class="review-title">
+                                    <h2>" Design quality "</h2>
+                                </div>
+                                <div class="review-star">
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="testi-item">
-                                <div class="single-testi">
-                                    <div class="testi-image">
-                                        <img src="images/testimonial/testi-2.svg" alt="image">
-                                    </div>
-                                    <div class="testi-text">
-                                        <h3>Testimonials</h3>
-                                        <h2>Best software company</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla consectetur interdum.
-                                            Vestibulum vel sem malesuada, bibendum est at, luctus est. Mauris consequat tristique mi vel eleifend.
-                                        </p>
-                                        <div class="testi-client">
-                                            <h4>
-                                                <i class="ti-user"></i>
-                                                Somewone famous
-                                            </h4>
-                                        </div>
-                                    </div>
+                            <div class="testi-text">
+                                <p>
+                                    There are many variations of passages of Lorem Ipsum available, by injected humour,
+                                    or randomised words which don't look even slightly believable. 
+                                </p>
+                            </div>
+                            <div class="testi-bottom">
+                                <div class="testi-image">
+                                    <img src="images/client/01.jpg" alt="image">
+                                </div>
+                                <div class="testi-info">
+                                    <h2>Erich bissonette</h2>
+                                    <h3>Oppo</h3>
                                 </div>
                             </div>
-                            <div class="testi-item">
-                                <div class="single-testi">
-                                    <div class="testi-image">
-                                        <img src="images/testimonial/testi-3.svg" alt="image">
-                                    </div>
-                                    <div class="testi-text">
-                                        <h3>Testimonials</h3>
-                                        <h2>Best software company</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla consectetur interdum.
-                                            Vestibulum vel sem malesuada, bibendum est at, luctus est. Mauris consequat tristique mi vel eleifend.
-                                        </p>
-                                        <div class="testi-client">
-                                            <h4>
-                                                <i class="ti-user"></i>
-                                                Somewone famous
-                                            </h4>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="single-testi">
+                            <div class="testi-review">
+                                <div class="review-title">
+                                    <h2>" Code quality "</h2>
+                                </div>
+                                <div class="review-star">
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star-o"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="testi-text">
+                                <p>
+                                    There are many variations of passages of Lorem Ipsum available,
+                                    but the majority have suffered alteration in some form
+                                </p>
+                            </div>
+                            <div class="testi-bottom">
+                                <div class="testi-image">
+                                    <img src="images/client/02.jpg" alt="image">
+                                </div>
+                                <div class="testi-info">
+                                    <h2>Tina Meyer</h2>
+                                    <h3>vivo</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-testi">
+                            <div class="testi-review">
+                                <div class="review-title">
+                                    <h2>" Feature Availability "</h2>
+                                </div>
+                                <div class="review-star">
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star-half-empty"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="testi-text">
+                                <p>
+                                    If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                                    isn't anything embarrassing hidden in the middle of text.
+                                </p>
+                            </div>
+                            <div class="testi-bottom">
+                                <div class="testi-image">
+                                    <img src="images/client/03.jpg" alt="image">
+                                </div>
+                                <div class="testi-info">
+                                    <h2>Sharon Murdock</h2>
+                                    <h3>Apple</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-testi">
+                            <div class="testi-review">
+                                <div class="review-title">
+                                    <h2>" Customizability "</h2>
+                                </div>
+                                <div class="review-star">
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="testi-text">
+                                <p>
+                                    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                                    as necessary, making this the first true generator on the Internet. 
+                                </p>
+                            </div>
+                            <div class="testi-bottom">
+                                <div class="testi-image">
+                                    <img src="images/client/04.jpg" alt="image">
+                                </div>
+                                <div class="testi-info">
+                                    <h2>Jesse Hunt</h2>
+                                    <h3>samsung</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-testi">
+                            <div class="testi-review">
+                                <div class="review-title">
+                                    <h2>" Flexibility "</h2>
+                                </div>
+                                <div class="review-star">
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star-half-empty"></i></li>
+                                        <li><i class="fa fa-star-o"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="testi-text">
+                                <p>
+                                    There are many variations of passages of Lorem Ipsum available, by
+                                    injected humour, or randomised words which don't look even slightly believable. 
+                                </p>
+                            </div>
+                            <div class="testi-bottom">
+                                <div class="testi-image">
+                                    <img src="images/client/05.jpg" alt="image">
+                                </div>
+                                <div class="testi-info">
+                                    <h2>Andrea Toy</h2>
+                                    <h3>Nokia</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-testi">
+                            <div class="testi-review">
+                                <div class="review-title">
+                                    <h2>" Development "</h2>
+                                </div>
+                                <div class="review-star">
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="testi-text">
+                                <p>
+                                    It uses a dictionary of over 200 Latin words, combined with a handful
+                                    of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+                                </p>
+                            </div>
+                            <div class="testi-bottom">
+                                <div class="testi-image">
+                                    <img src="images/client/06.jpg" alt="image">
+                                </div>
+                                <div class="testi-info">
+                                    <h2>Jay Allums</h2>
+                                    <h3>RedMI</h3>
                                 </div>
                             </div>
                         </div>
@@ -477,43 +855,241 @@
             </div>
         </div>
         <!-- Testimonial section end -->
-        <!-- Contact section start -->
-        <div id="contact-area" class="standard-section section-contact">
+        <!-- Blog section start -->
+        <div id="blog-area" class="standard-section section-bg">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 order-md-1 order-2">
-                        <div class="contact-form">
-                            <form action="" method="post">
-                                <div class="form-group">
-                                    <label for="uname">Name</label>
-                                    <input type="text" name="uname" id="uname" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="uphone">Phone</label>
-                                    <input type="text" name="uphone" id="uphone" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="uemail">Email</label>
-                                    <input type="text" name="uemail" id="uemail" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message" cols="30" rows="3" required></textarea>
-                                </div>
-                                <a href="#" class="btn btn-link">Submit</a>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-md-5 offset-md-1 order-md-2 order-1">
-                        <div class="area-title">
-                            <h2>Contact Us</h2>
+                    <div class="col-md-12">
+                        <div class="area-heading">
+                            <h2>Latest news</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Maecenas pellentesque ac lectus et semper. Nullam in nunc tortor.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci est, accumsan eu gravida
+                                sed, euismod eget erat. 
                             </p>
                         </div>
-                        <div class="contact-image">
-                            <img src="images/bg/contact.svg" alt="image">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <article class="single-blog">
+                            <div class="blog-thumbnail">
+                                <img src="images/blog/01.jpg" alt="image">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-user-o"></i>
+                                            <a href="#">Waliur</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-tag"></i>
+                                            <a href="#">Branding</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="blog-title">
+                                    <a href="#">
+                                        Our Home Entertainment has Evolved Significantly
+                                    </a>
+                                </div>
+                                <div class="blog-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci est, accumsan eu gravida
+                                        sed, euismod eget erat. 
+                                    </p>
+                                </div>
+                                <div class="blog-button">
+                                    <a href="#" class="text-link">Read more</a>
+                                    <a href="#" class="blog-date">
+                                        <i class="fa fa-calendar-o"></i>
+                                        24-10-2020
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="single-blog">
+                            <div class="blog-thumbnail">
+                                <img src="images/blog/02.jpg" alt="image">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-user-o"></i>
+                                            <a href="#">Waliur</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-tag"></i>
+                                            <a href="#">Branding</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="blog-title">
+                                    <a href="#">
+                                        These Are The Voyages of The Starship Enterprise
+                                    </a>
+                                </div>
+                                <div class="blog-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci est, accumsan eu gravida
+                                        sed, euismod eget erat. 
+                                    </p>
+                                </div>
+                                <div class="blog-button">
+                                    <a href="#" class="text-link">Read more</a>
+                                    <a href="#" class="blog-date">
+                                        <i class="fa fa-calendar-o"></i>
+                                        27-10-2020
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="single-blog">
+                            <div class="blog-thumbnail">
+                                <img src="images/blog/03.jpg" alt="image">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-user-o"></i>
+                                            <a href="#">Waliur</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-tag"></i>
+                                            <a href="#">Branding</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="blog-title">
+                                    <a href="#">
+                                        Three Reasons Visibility Matters in Supply Chain
+                                    </a>
+                                </div>
+                                <div class="blog-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci est, accumsan eu gravida
+                                        sed, euismod eget erat. 
+                                    </p>
+                                </div>
+                                <div class="blog-button">
+                                    <a href="#" class="text-link">Read more</a>
+                                    <a href="#" class="blog-date">
+                                        <i class="fa fa-calendar-o"></i>
+                                        28-10-2020
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog section end -->
+        <!-- Hire me section start -->
+        <div class="section-hire-me">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hire-me">
+                            <div class="hire-me-text">
+                                <h2>I am available for freelancer projects</h2>
+                                <p>
+                                    Obviously I'm a Web Designer. Experienced with all stages of the development
+                                    cycle for dynamic web projects.
+                                </p>
+                            </div>
+                            <div class="hire-me-button">
+                                <a href="#contact-area" class="btn btn-link">
+                                    Hire me
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hire me section end -->
+        <!-- Contact section start -->
+        <div id="contact-area" class="standard-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="area-heading">
+                            <h2>Contact me</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci est, accumsan eu gravida
+                                sed, euismod eget erat. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="single-contact">
+                            <div class="contact-icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h2>Phone</h2>
+                                <p>Promising development turmoil inclusive education transformative community</p>
+                                <a href="#">+880-1724-987501</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-contact">
+                            <div class="contact-icon">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h2>Email</h2>
+                                <p>Promising development turmoil inclusive education transformative community</p>
+                                <a href="#">
+                                    md.waliurrahaman00@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-contact">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h2>Location</h2>
+                                <p>Promising development turmoil inclusive education transformative community</p>
+                                <a href="https://goo.gl/maps/CYewihjszCrHoUW69" target="_blank">
+                                    View on Google map
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-50">
+                    <div class="col-md-12">
+                        <div class="contact-form">
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <input type="text" name="fname" id="fname" placeholder="First Name:">
+                                        <input type="email" name="uemail" id="uemail" placeholder="Your Email:">
+                                        <input type="text" name="subject" id="subject" placeholder="Your Subject:">
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <textarea name="message" id="message" cols="30" rows="4" placeholder="Your Message:"></textarea>
+                                    </div>
+                                </div>
+                                <div class="send-button">
+                                    <a href="#" class="btn btn-link">Send message</a>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -524,116 +1100,77 @@
     <!-- Main section end -->
     <!-- Footer section start -->
     <footer id="footer-area" class="standard-section section-footer">
-        <!-- Footer top section start -->
-        <div id="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <aside class="footer-info">
-                            <div class="footer-logo">
-                                <a href="#">
-                                    <img src="images/icon/logo-white.png" alt="Logo">
-                                </a>
-                            </div>
-                            <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </aside>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <aside class="footer-widget">
-                            <div class="widget-title">
-                                <h2>Quick links</h2>
-                            </div>
-                            <div class="widget-list">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-angle-right"></i>
-                                            About us
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-angle-right"></i>
-                                            Our services
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-angle-right"></i>
-                                            Our pricing
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-angle-right"></i>
-                                            Blog
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </aside>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <aside class="footer-widget">
-                            <div class="widget-title">
-                                <h2>Contact</h2>
-                            </div>
-                            <div class="widget-contact-text">
-                                <p>street 10, 3rd cross</p>
-                                <p>Koramagala</p>
-                                <p>0123456789</p>
-                                <a href="#">yourmail@yourdomain.com</a>
-                            </div>
-                        </aside>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <aside class="footer-widget">
-                            <div class="widget-title">
-                                <h2>Follow us</h2>
-                            </div>
-                            <div class="social-link">
-                                <ul>
-                                    <li><a href="#"><i class="ti-twitter"></i></a></li>
-                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer top section end -->
-        <!-- Footer bottom section start -->
-        <div id="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="copyright-text">
-                            <h2>&copy; 2020 All rights reserved.</h2>
+        <div class="containter">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-info">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="images/icon/logo-light.png" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="footer-text">
+                            <p>
+                                Obviously I'm a Web Designer. Experienced with all stages of the development
+                                cycle for dynamic web projects.
+                            </p>
+                        </div>
+                        <div class="footer-social-link">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100004227857493" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/waliurrahaman8" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/waliur_developer/" target="_blank">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/waliur-rahaman" target="_blank">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="copyright-text">
+                        <h2>
+                            &copy; 2019-20 Waliur. Design with <i class="fa fa-heart"></i> by waliur.
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Footer bottom section end -->
     </footer>
     <!-- Footer section end -->
-    <!-- Scroll to top section start -->
-    <div class="scroll-to-top">
-        <a href="#">
-            <i class="ti-angle-up"></i>
-        </a>
+    <!-- Scrool to top section start -->
+    <div id="scroll-to-top">
+        <div class="top-icon">
+            <i class="fa fa-angle-up"></i>
+        </div>
     </div>
-    <!-- Scroll to top section end -->
+    <!-- Scrool to top section end -->
     
     <!-- All Javascript files are included here -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/isotop-functions.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

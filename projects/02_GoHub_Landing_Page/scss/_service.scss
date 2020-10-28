@@ -1,0 +1,87 @@
+#service-area{
+    text-align: center;
+}
+.service-heading{
+    h2{
+        @include textStyle(48px,300,$themeColorMartinique);
+        margin-bottom: 30px;
+    }
+    p{
+        @include textStyle(23px, 300, $themeColorBlueBayoux);
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+.single-service{
+    margin-top: 150px;
+
+    .service-icon{
+        margin-bottom: 35px;
+    }
+    h2{
+        @include textStyle(20px,400,$themeColorEbonyClay);
+        margin-bottom: 20px;
+    }
+    p{
+        @include textStyle(16px,300,$themeColorBlueBayoux);
+    }
+}
+
+@include breakpointWidth(1199px){
+    .service-heading{
+        h2{
+            @include textStyle(35px,300,$themeColorMartinique);
+            margin-bottom: 30px;
+        }
+        p{
+            @include textStyle(20px, 300, $themeColorBlueBayoux);
+            width: 100%;
+        }
+    }
+}
+
+@include breakpoint(md){
+    .single-service{
+        margin-top: 140px;
+    
+        .service-icon{
+            margin-bottom: 35px;
+        }
+        h2{
+            @include textStyle(16px,400,$themeColorEbonyClay);
+            margin-bottom: 20px;
+        }
+        p{
+            @include textStyle(14px,300,$themeColorBlueBayoux);
+        }
+    }
+}
+
+@include breakpointWidth(767px){
+    .service-heading{
+        h2{
+            @include textStyle(25px,300,$themeColorMartinique);
+            margin-bottom: 25px;
+        }
+        p{
+            @include textStyle(16px, 300, $themeColorBlueBayoux);
+            width: 100%;
+        }
+    }
+    .single-service{
+        margin-top: 80px;
+    
+        .service-icon{
+            margin-bottom: 30px;
+        }
+        h2{
+            @include textStyle(18px,400,$themeColorEbonyClay);
+            margin-bottom: 20px;
+        }
+        p{
+            @include textStyle(16px,300,$themeColorBlueBayoux);
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}

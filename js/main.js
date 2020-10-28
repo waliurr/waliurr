@@ -16,20 +16,9 @@ All javascript and jquery plugins activation
     sticky header
     ---------------------------*/
     window.addEventListener("scroll", function(){
-        const header = document.querySelector("header");
+        const header = document.querySelector("#header-area");
         header.classList.toggle("sticky", window.scrollY > 0);
     });  
-    
-    
-    /*---------------------------
-    Responsive Menu
-    ---------------------------*/
-    const navToogler = document.querySelector('.navbar-toggler');
-    const navContent = document.querySelector('#navbar-content');
-    
-    navToogler.addEventListener("click", function(){
-        navContent.classList.toggle("show-nav");
-    });
     
     
     /*---------------------------
@@ -40,7 +29,7 @@ All javascript and jquery plugins activation
             event.preventDefault();
             
             let hash = this.hash;
-
+            
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function(){
@@ -51,12 +40,48 @@ All javascript and jquery plugins activation
     
     
     /*---------------------------
+    counter
+    ---------------------------*/
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+    
+
+    /*---------------------------
+    skills bar sections
+    ---------------------------*/
+    const progressLine = document.querySelectorAll('.progress-line');
+
+    progressLine.forEach(function(item){
+        item.style.width = item.getAttribute('data-percent') + '%';
+        item.style.opacity = '1';
+    });
+    
+    
+    /*---------------------------
     Testimonial slider
     ---------------------------*/
-    $('.testimonial-content').slick({
-        arrows: false,
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:30,
+        items:3,
+        nav:false,
         dots: true,
-        autoplay: true
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            1199:{
+                items:3
+            }
+        }
     });
     
     
@@ -65,16 +90,22 @@ All javascript and jquery plugins activation
     ---------------------------*/
     $(window).scroll(function(){
         if($(this).scrollTop()>500){
-            $('.scroll-to-top').fadeIn();
+            $('#scroll-to-top').fadeIn();
         }else{
-            $('.scroll-to-top').fadeOut();
+            $('#scroll-to-top').fadeOut();
         }
     });
     
-    $('.scroll-to-top').click(function(){
+    $('#scroll-to-top').click(function(){
         $("html,body").animate({scrollTop : 0 }, 600);
         return false;
     });
+    
+    
+    /*---------------------------
+    WOW animation
+    ---------------------------*/
+    new WOW().init();
     
     
 })(jQuery);

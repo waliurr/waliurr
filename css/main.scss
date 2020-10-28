@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------------
+Theme Name: 
+Author: 
+URL: 
+version: 1.0.0
+------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
+CSS table of content
+
+    01. Base style
+    02. Header style
+    03. Button style
+    04. Header style
+    05. Slider style
+    00. About style
+    00. Features style
+    00. Services style
+    00. Counter style
+    00. Pricing style
+    00. Portfolio style
+    00. Team style
+    00. Testimonial style
+    00. Video style
+    00. Blog style
+    00. Contact style
+    00. Footer style
+    00. Responsive style
+
+------------------------------------------------------------------------------------*/
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/breakpoints";
+/*-------------------------
+01. Base style
+-------------------------*/
+@import "base/base";
+
+/*-------------------------
+02. Typograph style
+-------------------------*/
+@import "base/typography";
+
+/*-------------------------
+03. Button style
+-------------------------*/
+@import "components/buttons";
+
+/*-------------------------
+04. Header style
+-------------------------*/
+@import "layouts/header";
+
+/*-------------------------
+05. Slider style
+-------------------------*/
+@import "layouts/slider";
+
+/*-------------------------
+05. About style
+-------------------------*/
+@import "layouts/about";
+
+/*-------------------------
+05. Features style
+-------------------------*/
+@import "layouts/features";
+
+/*-------------------------
+05. Services style
+-------------------------*/
+@import "layouts/services";
+
+/*-------------------------
+05. Counter style
+-------------------------*/
+@import "layouts/counter";
+
+/*-------------------------
+05. Pricing style
+-------------------------*/
+@import "layouts/pricing";
+
+/*-------------------------
+05. Portfolio style
+-------------------------*/
+@import "layouts/portfolio";
+
+/*-------------------------
+05. Team style
+-------------------------*/
+@import "layouts/team";
+
+/*-------------------------
+05. Testimonial style
+-------------------------*/
+@import "layouts/testimonial";
+
+/*-------------------------
+05. Video style
+-------------------------*/
+@import "layouts/video";
+
+/*-------------------------
+05. Interests style
+-------------------------*/
+@import "layouts/interest";
+
+/*-------------------------
+05. Skills style
+-------------------------*/
+@import "layouts/skills";
+
+/*-------------------------
+05. Blog style
+-------------------------*/
+@import "layouts/blog";
+
+/*-------------------------
+05. Contact style
+-------------------------*/
+@import "layouts/contact";
+
+/*-------------------------
+00. Footer style
+-------------------------*/
+@import "layouts/footer";
+
+/*-------------------------
+00. Responsive style
+-------------------------*/
+@import "layouts/responsive";

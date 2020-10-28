@@ -1,0 +1,35 @@
+//font family included
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$poppinsFont: 'Poppins', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$robotoFont: 'Roboto', sans-serif;
+
+//solid color
+$white: #ffffff;
+$black: #000000;
+$red: #ff0000;
+$green: #00ff00;
+$yellow: yellow;
+
+//theme color
+$themeColor: #4527a4;
+$bodyColor: #696687;
+$hoverColor: #3321a1;
+
+//text color
+$titleColor: #232931;
+$subTitleColor: #242F51;
+$textColor: #152c5b;
+
+//background color
+$bgHeader: #1f2749;
+$bgSection: #f9f9f9;
+$bgCard: #F7F6FB;
+$bgContact: #F0F1FF;
+$bgFooter: #1f2749;
+
+//icon color
+.fa-star-o{ color: #ff922b; }

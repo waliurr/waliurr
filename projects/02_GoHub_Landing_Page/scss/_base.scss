@@ -1,0 +1,69 @@
+.standard-section{
+    padding: 100px 0px;
+}
+.section-footer{
+    background: $themeColorEbonyClay;
+}
+.section-contact{
+    background: $bgContact;
+}
+
+@include breakpointWidth(991px){
+    .standard-section{
+        padding: 50px 0px;
+    }
+}
+
+.btn{
+    background: $bgButton;
+    border-radius: 5px;
+    padding: 10px 25px;
+    text-decoration: none;
+    @include textStyle(16px, 700, $white);
+}
+.btn.btn-head{
+    text-transform: initial;
+    transition: 0.3s;
+
+    &:hover{
+        text-decoration: none;
+        background: $white;
+        color: $bgButtonHover;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.btn.btn-link{
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    transition: 0.3s;
+
+    &:hover{
+        text-decoration: none;
+        background: transparent;
+        border: 2px solid $bgButton;
+        color: $themeColorMartinique;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.text-link{
+    @include textStyle(19px, 400, $themeColorMartinique);
+    cursor: pointer;
+    transition: 0.3s;
+
+    i{
+        transition: 0.3s;
+        transform: translateX(0%);
+    }
+    &:hover{
+        color: $bgButtonHover;
+    }
+    &:hover i{
+        transform: translateX(20%);
+    }
+}
