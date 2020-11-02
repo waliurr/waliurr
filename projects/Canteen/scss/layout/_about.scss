@@ -1,0 +1,56 @@
+.single-slide{
+    padding: 20px;
+    text-align: center;
+    .slide-text{
+        margin-top: 30px;
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            color: $bodyColor;
+            line-height: 27px;
+        }
+    }
+}
+
+.slide-image{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid $themeColor;
+    border-radius: 10px;
+    overflow: hidden;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        opacity: 0.4;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .img-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            text-transform: capitalize;
+            font-size: 40px;
+            font-weight: 600;
+            color: $white;
+            letter-spacing: 2px;
+            line-height: 40px;
+        }
+    }
+}

@@ -1,0 +1,209 @@
+.footer-logo{
+    margin-bottom: 20px;
+    a{
+        img{
+            max-width: 60%;
+        }
+    }
+}
+
+.footer-text{
+    margin-bottom: 20px;
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        color: $footerColor;
+        line-height: 27px;
+    }
+}
+
+/*--- Footer social link style ---*/
+.footer-social-link{
+    ul{
+        display: flex;
+        li{
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+        li a{
+            font-size: 14px;
+            font-weight: 400;
+            color: $widgetColor;
+            line-height: 14px;
+            display: inline-block;
+            transition: 0.3s;
+            i{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                border: 1px solid $widgetColor;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.3s;
+            }
+            &:hover{
+                transform: translateY(10px);
+                color: $themeColor;
+                i{
+                    border: 1px solid $themeColor;
+                }
+            }
+        }
+    }
+}
+
+/*--- Footer widget style ---*/
+.widget-title{
+    margin-bottom: 20px;
+    h2{
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        color: $footerColor;
+        padding-bottom: 25px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: $themeColor;
+            opacity: 0.8;
+        }
+    }
+}
+
+.widget-list{
+    ul{
+        display: flex;
+        flex-direction: column;
+        li{
+            &:not(:last-child){
+                margin-bottom: 12px;
+            }
+        }
+        li a{
+            font-size: 15px;
+            font-weight: 400;
+            color: $footerColor;
+            line-height: 27px;
+            i{
+                font-size: 14px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+.recent-post{
+    display: flex;
+    .post-thumbnail{
+        margin-right: 15px;
+        a img{
+            max-width: 75px;
+            height: 75px;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+    }
+    .post-link{
+        h3{
+            line-height: 18px;
+            margin-bottom: 10px;
+            a{
+                font-size: 13px;
+                font-weight: 400;
+                color: $footerColor;
+            }
+        }
+        p a{
+            font-size: 12px;
+            font-weight: 400;
+            color: $footerColor;
+            line-height: 27px;
+        }
+    }
+}
+
+.widget-text{
+    margin-bottom: 20px;
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        color: $footerColor;
+        line-height: 27px;
+    }
+}
+
+.search-box{
+    position: relative;
+    input{
+        border: none;
+        padding: 8px 13px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        color: $bodyColor;
+    }
+    #search{
+        width: 100%;
+        border: 1px solid $white;
+    }  
+    #submit{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: $themeColor;
+        border: 1px solid $themeColor;
+        color: $white;
+        transition: 0.3s;
+        &:hover{
+            background: $bodyColor;
+            border: 1px solid $bodyColor;
+            color: $white;
+        }
+    }
+}
+
+.footer-content{
+    text-align: center;
+    .footer-logo{
+        img{
+            max-width: 150px;
+        }
+    }
+}
+
+.copyright-text{
+    margin-top: 10px;
+    h2{
+        font-size: 14px;
+        font-weight: 400;
+        color: #999;
+        line-height: 27px;
+        opacity: 0.8;
+    }
+}
+
+@include breakpointWidth(991px){
+    .footer-widget{
+        margin-top: 50px;
+    }
+}
+
+@include breakpointWidth(767px){
+    .search-box{
+        width: 400px;
+    }
+}
+
+@include breakpointWidth(480px){
+    .search-box{
+        width: 100%;
+    }
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Brown';
+    src: url('../fonts/Brown-fonts/Light/Brown-Light.eot');
+    src: url('../fonts/Brown-fonts/Light/Brown-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Brown-fonts/Light/Brown-Light.svg#Brown') format('svg'),
+    url('../fonts/Brown-fonts/Light/Brown-Light.ttf') format('truetype'),
+    url('../fonts/Brown-fonts/Light/Brown-Light.woff') format('woff'),
+    url('../fonts/Brown-fonts/Light/Brown-Light.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('../fonts/Brown-fonts/Regular/Brown-Regular.eot');
+    src: url('../fonts/Brown-fonts/Regular/Brown-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Brown-fonts/Regular/Brown-Regular.svg#Brown') format('svg'),
+    url('../fonts/Brown-fonts/Regular/Brown-Regular.ttf') format('truetype'),
+    url('../fonts/Brown-fonts/Regular/Brown-Regular.woff') format('woff'),
+    url('../fonts/Brown-fonts/Regular/Brown-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('../fonts/Brown-fonts/Bold/Brown-Bold.eot');
+    src: url('../fonts/Brown-fonts/Bold/Brown-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Brown-fonts/Bold/Brown-Bold.svg#Brown') format('svg'),
+    url('../fonts/Brown-fonts/Bold/Brown-Bold.ttf') format('truetype'),
+    url('../fonts/Brown-fonts/Bold/Brown-Bold.woff') format('woff'),
+    url('../fonts/Brown-fonts/Bold/Brown-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+//font family
+$brownFont: 'Brown';

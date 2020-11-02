@@ -1,0 +1,59 @@
+#header-area{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding-top: 60px;
+    background-color: transparent;
+    transition: 0.5s;
+    &.sticky{
+        padding-top: 10px;
+        background-color: rgba($color: $black, $alpha: 0.6);
+    }
+}
+
+.navbar-toggler{
+    i{
+        color: $white;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.main-menu{
+    li{
+        margin: 0 5px;
+    }
+    li a{
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+        display: inline-block;
+        padding: 5px 20px;
+        &.active,
+        &:hover{
+            background-color: rgba(0,0,0,.3);
+            border-radius: 5px;
+        }
+    }
+}
+
+@include breakpointWidth(991px){
+    #header-area{
+        padding-top: 20px;
+        background-color: rgba($color: $black, $alpha: 0.6);
+        &.sticky{
+            padding-top: 5px;
+        }
+    }
+    
+    .main-menu{
+        li{
+            margin: 5px 0;
+            &:first-child{
+                margin-top: 20px;
+            }
+        }
+    }
+}

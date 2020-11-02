@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------------
+Theme Name: cuda
+Author: waliur
+URL: waliurr00@gmail.com
+version: 1.0.0
+------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
+CSS table of content
+
+    01. Base style
+    02. Typograph style
+    03. Button style
+    04. Header style
+    05. Slider style
+    05. Slider style
+    06. Service style
+    07. Team style
+    08. Skills style
+    09. Portfolio style
+    10. Testimonial style
+    11. Contact style
+    12. Footer style
+
+------------------------------------------------------------------------------------*/
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/breakpoints";
+/*-------------------------
+01. Base style
+-------------------------*/
+@import "base/base";
+
+/*-------------------------
+02. Typograph style
+-------------------------*/
+@import "base/typography";
+
+/*-------------------------
+03. Button style
+-------------------------*/
+@import "components/buttons";
+
+/*-------------------------
+04. Header style
+-------------------------*/
+@import "layouts/header";
+
+/*-------------------------
+05. Slider style
+-------------------------*/
+@import "layouts/slider";
+
+/*-------------------------
+06. Service style
+-------------------------*/
+@import "layouts/service";
+
+/*-------------------------
+07. Team style
+-------------------------*/
+@import "layouts/team";
+
+/*-------------------------
+08. Skills style
+-------------------------*/
+@import "layouts/skills";
+
+/*-------------------------
+09. Portfolio style
+-------------------------*/
+@import "layouts/portfolio";
+
+/*-------------------------
+10. Testimonial style
+-------------------------*/
+@import "layouts/testimonial";
+
+/*-------------------------
+11. Contact style
+-------------------------*/
+@import "layouts/contact";
+
+/*-------------------------
+12. Footer style
+-------------------------*/
+@import "layouts/footer";
+
+/*-------------------------
+13. Responsive style
+-------------------------*/
+@import "layouts/responsive";

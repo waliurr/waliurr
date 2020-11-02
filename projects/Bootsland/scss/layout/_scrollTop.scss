@@ -1,0 +1,28 @@
+#scroll-area{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    .scroll-to-top{
+        background: $themeColor;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        i{
+            font-size: 24px;
+            color: $white;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+        }
+        &:hover{
+            background: $white;
+            i{
+                color: $themeColor;
+            }
+        }
+    }
+}

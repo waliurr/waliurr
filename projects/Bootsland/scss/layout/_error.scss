@@ -1,0 +1,56 @@
+.error-content{
+    text-align: center;
+    .error-image{
+        margin-bottom: 30px;
+    }
+    .error-text{
+        h2{
+            text-transform: capitalize;
+            font-size: 32px;
+            font-weight: 300;
+            color: $bodyColor;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            color: $bodyColor;
+            max-width: 50%;
+            margin: 0 auto;
+        }
+    }
+    .error-button-group{
+        margin-top: 10px;
+    }
+}
+
+@include breakpointWidth(991px){
+    .error-content{
+        .error-text{
+            h2{
+                font-size: 32px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 16px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@include breakpointWidth(991px){
+    .error-content{
+        .error-image{
+            margin-bottom: 20px;
+        }
+        .error-text{
+            h2{
+                font-size: 23px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
