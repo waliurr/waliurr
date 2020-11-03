@@ -1,0 +1,41 @@
+.about-text{
+    margin-bottom: 50px;
+    h2{
+        font-size: 40px;
+        font-weight: 600;
+        color: $titleColor;
+        line-height: 56px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-family: $robotoFont;
+        font-size: 15px;
+        font-weight: 400;
+        color: $bodyColor;
+        line-height: 26px;
+    }
+}
+
+@include breakpointWidth(1199px){
+    .about-text{
+        h2{
+            font-size: 32px;
+            line-height: 44.8px;
+        }
+    }
+}
+
+@include breakpointWidth(991px){
+    .about-text{
+        h2{
+            font-size: 30px;
+            line-height: 42px;
+        }
+    }
+}
+
+@include breakpointWidth(767px){
+    .about-img{
+        margin-bottom: 50px;
+    }
+}

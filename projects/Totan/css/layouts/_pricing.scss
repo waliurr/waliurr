@@ -1,0 +1,67 @@
+.single-pricing{
+    margin-top: 50px;
+    padding: 41px 15px 45px;
+    border-radius: 5px;
+    background-color: $white;
+    box-shadow: 0 0 55px 0 rgba(84, 72, 163, .10);
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 4px -1px 2.1875rem 24px rgba(0, 0, 0, 0.08);
+    }
+}
+
+.pricing-top{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.pricing-price{
+    margin-bottom: 15px;
+    h2{
+        text-transform: capitalize;
+        font-size: 40px;
+        font-weight: 600;
+        color: $themeColor;
+        line-height: 32px;
+        span{
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+.pricing-title{
+    h2{
+        text-transform: capitalize;
+        font-size: 22px;
+        font-weight: 500;
+        color: $titleColor;
+        line-height: 30.8px;
+    }
+}
+
+.pricing-list{
+    padding: 20px;
+    ul{
+        li{
+            text-transform: capitalize;
+            font-family: $robotoFont;
+            font-size: 15px;
+            font-weight: 400;
+            color: $bodyColor;
+            line-height: 22.5px;
+            i{
+                margin-right: 10px;
+            }
+            &:not(:first-child){
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.pricing-button{
+    margin-top: 20px;
+    text-align: center;
+}

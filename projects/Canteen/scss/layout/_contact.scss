@@ -1,0 +1,170 @@
+.contact-content{
+    display: flex;
+    .contact-address{
+        flex-basis: 30%;
+        background: rgba(0,0,0,.75);
+        padding: 20px 20px 20px 35px;
+    }
+    .contact-form{
+        flex-basis: 70%;
+        background: $white;
+        padding: 20px 20px 20px 35px;
+    }
+}
+
+.single-address{
+    display: flex;
+    margin-bottom: 30px;
+    .address-icon{
+        width: 50px;
+        margin-right: 15px;
+        i{
+            color: $themeColor;
+        }
+    }
+}
+
+.fa-map-marker{ font-size: 40px; }
+.fa-mobile{ font-size: 40px; }
+.fa-envelope-o{ font-size: 25px; }
+
+.address-text{
+    h2{
+        font-size: 20px;
+        font-weight: 500;
+        color: $white;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 400;
+        color: $white;
+        word-spacing: 1px;
+    }
+}
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    ul{
+        display: flex;
+        li{
+            padding: 0 10px;
+        }
+        li a{
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            color: $white;
+            transition: 0.3s;
+            transform: scale(1);
+            &:hover{
+                color: $white;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.contact-form{
+    input{
+        width: 100%;
+        background-color: $white;
+        border: 1px solid #ddd;
+        padding: 6px 10px 6px 30px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #888;
+        line-height: 27px;
+        transition: 0.3s;
+        &:focus{
+            border: 1px solid $themeColor; 
+        }
+    }
+    
+    input[type="submit"]{
+        margin-top: 20px;
+        width: auto;
+        background-color: $white;
+        border: 1px solid $themeColor;
+        border-radius: 50px;
+        padding: 8px 20px;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 600;
+        color: $themeColor;
+        letter-spacing: 1px;
+        transition: 0.3s;
+        &:hover{
+            background-color: $themeColor;
+            color: $white;
+        }
+    }
+    textarea{
+        width: 100%;
+        background-color: $white;
+        border: 1px solid #ddd;
+        padding: 6px 10px 6px 30px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #888;
+        transition: 0.3s;
+        &:focus{
+            border: 1px solid $themeColor; 
+        }
+    }
+}
+
+.form-view{
+    display: flex;
+    justify-content: space-between;
+    &.view-2{
+        .form-input{
+            flex-basis: 48%;
+        }
+    }
+}
+
+.form-input{
+    position: relative;
+    margin-bottom: 20px;
+    &::before{
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-family: "FontAwesome";
+        font-size: 15px;
+        color: $themeColor;
+    }
+    &.input-name::before{ content: "\f2c0"; }
+    &.input-phone::before{ content: "\f10b"; }
+    &.input-email::before{ content: "\f003"; }
+    &.input-web::before{ content: "\f0c1"; }
+    &.input-subject::before{ content: "\f27b"; }
+    &.input-message::before{
+        content: "\f27b";
+        top: 16px;
+    }
+}
+
+@include breakpointWidth(767px){
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-link{
+        justify-content: flex-start;
+    }
+
+    .form-view{
+        display: flex;
+        flex-direction: column;
+        &.view-2{
+            .form-input{
+                flex-basis: 48%;
+            }
+        }
+    }
+}

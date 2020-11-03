@@ -1,0 +1,228 @@
+.single-contact{
+    margin-bottom: 20px;
+    text-align: center;
+    .contact-icon{
+        margin-bottom: 20px;
+        i{
+            font-size: 40px;
+            color: $themeColor;
+        }
+    }
+    .contact-text{
+        h2{
+            text-transform: capitalize;
+            font-size: 24px;
+            font-weight: 500;
+            color: $bodyColor;
+            margin-bottom: 10px;
+        }
+        p{
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 400;
+            color: $bodyColor;
+        }
+        a{
+            font-size: 16px;
+            font-weight: 400;
+            color: $themeColor;
+            opacity: 0.8;
+            transition: 0.3s;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.form-area-content{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    &.sign-in-2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &.sign-up{
+        width: 60%;
+    }
+    &.contact-us{
+        width: 80%;
+        padding-top: 30px;
+    }
+    .form-heading{
+        margin-bottom: 30px;
+        h2{
+            text-transform: capitalize;
+            font-size: 32px;
+            font-weight: 300;
+            color: $bodyColor;
+        }
+        p{
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 300;
+            color: $textColor;
+        }
+    }
+    .form-area{
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .form-area-view{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .form-group{
+               width: 48%;
+            }
+        }
+        label{
+            text-transform: capitalize;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        .form-check-label{
+            margin-top: 10px;
+            text-align: center;
+        }
+        input{
+            font-size: 16px;
+            font-weight: 400;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            color: #495057;
+        }
+        #error-msg{
+            font-size: 12px;
+            font-weight: 400;
+            color: $red;
+            text-align: right;
+        }
+        .forget-pass{
+            display: flex;
+            justify-content: space-between;
+            a{
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 400;
+                color: $themeColor;
+                opacity: 0.8;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+        .submit-button{
+            margin-top: 30px;
+        }
+    }
+    .form-area-bottom{
+        margin-top: 20px;
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            color: $subTitleColor;
+        }
+        a{
+            color: $themeColor;
+            opacity: 0.85;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@include breakpointWidth(1199px){
+    .form-area-content{
+        width: 50%;
+        &.sign-up{
+            width: 70%;
+        }
+    }
+}
+
+@include breakpointWidth(991px){
+    .sign-in-image{
+        margin-bottom: 30px;
+    }
+    .form-area-content{
+        width: 60%;
+        &.sign-up{
+            width: 80%;
+        }
+        &.contact-us{
+            width: 100%;
+        }
+    }
+}
+
+@include breakpointWidth(767px){
+    .single-contact{
+        .contact-text{
+            h2{
+                font-size: 18px;
+            }
+            p{
+                font-size: 14px;
+            }
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .form-area-content{
+        width: 100%;
+        &.sign-up{
+            width: 100%;
+        }
+        .form-heading{
+            h2{
+                font-size: 18px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .form-area{
+            .form-area-view{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: flex-start;
+                .form-group{
+                   width: 100%;
+                }
+            }
+            label{
+                font-size: 14px;
+            }
+            input{
+                font-size: 14px;
+            }
+            .forget-pass{
+                a{
+                    font-size: 14px;
+                }
+            }
+            
+        }
+        .form-area-bottom{
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

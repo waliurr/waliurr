@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------------
+Theme Name: Totan - One Page Parallax
+Author: waliur
+URL: md.waliurrahaman00@gmail.com
+version: 1.0.0
+------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
+CSS table of content
+
+    01. Base style
+    02. Header style
+    03. Button style
+    04. Header style
+    05. Slider style
+    06. Features style
+    07. About style
+    08. Counter style
+    09. Services style
+    10. Video style
+    11. Portfolio style
+    12. Team style
+    13. Pricing style
+    14. Testimonial style
+    15. Blog style
+    16. Contact style
+    17. Footer style
+    18. Responsive style
+
+------------------------------------------------------------------------------------*/
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/breakpoints";
+/*-------------------------
+01. Base style
+-------------------------*/
+@import "base/base";
+
+/*-------------------------
+02. Typograph style
+-------------------------*/
+@import "base/typography";
+
+/*-------------------------
+03. Button style
+-------------------------*/
+@import "components/buttons";
+
+/*-------------------------
+04. Header style
+-------------------------*/
+@import "layouts/header";
+
+/*-------------------------
+05. Slider style
+-------------------------*/
+@import "layouts/slider";
+
+/*-------------------------
+05. Features style
+-------------------------*/
+@import "layouts/features";
+
+/*-------------------------
+05. About style
+-------------------------*/
+@import "layouts/about";
+
+/*-------------------------
+05. Counter style
+-------------------------*/
+@import "layouts/counter";
+
+/*-------------------------
+05. Services style
+-------------------------*/
+@import "layouts/services";
+
+/*-------------------------
+05. Video style
+-------------------------*/
+@import "layouts/video";
+
+/*-------------------------
+05. Portfolio style
+-------------------------*/
+@import "layouts/portfolio";
+
+/*-------------------------
+05. Team style
+-------------------------*/
+@import "layouts/team";
+
+/*-------------------------
+05. Pricing style
+-------------------------*/
+@import "layouts/pricing";
+
+/*-------------------------
+05. Testimonial style
+-------------------------*/
+@import "layouts/testimonial";
+
+/*-------------------------
+05. Blog style
+-------------------------*/
+@import "layouts/blog";
+
+/*-------------------------
+05. Contact style
+-------------------------*/
+@import "layouts/contact";
+
+/*-------------------------
+00. Footer style
+-------------------------*/
+@import "layouts/footer";
+
+/*-------------------------
+00. Responsive style
+-------------------------*/
+@import "layouts/responsive";

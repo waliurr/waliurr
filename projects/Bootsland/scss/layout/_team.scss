@@ -1,0 +1,52 @@
+.single-team{
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s;
+    &.active,
+    &:hover{
+        background: $white;
+        border-radius: 5px;
+        box-shadow: 0px 10px 55px 5px rgba(137, 173, 255, .15);
+    }
+    &:hover{
+        transform: translateY(-15px);
+    }
+    .team-image{
+        margin-bottom: 20px;
+    }
+    .team-text{
+        h2{
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 500;
+            color: $bodyColor;
+            margin-bottom: 5px;
+        }
+        p{
+            text-transform: capitalize;
+            font-size: 13px;
+            font-weight: 400;
+            color: $subTitleColor;
+        }
+    }
+    .team-social-link{
+        margin-top: 20px;
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                padding: 0px 8px;
+            }
+            li a{
+                font-size: 23px;
+                color: $subTitleColor;
+                opacity: 0.7;
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

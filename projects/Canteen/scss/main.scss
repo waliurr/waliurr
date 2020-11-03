@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------------
+Theme Name: canteen
+Author: waliur
+URL: waliurr00@gmail.com
+version: 1.0.0
+------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
+CSS table of content
+
+    01. Base style
+    02. Header style
+    03. Button style
+    04. Header style
+    05. Slider style
+
+------------------------------------------------------------------------------------*/
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/breakpoint";
+/*-------------------------
+01. Base style
+-------------------------*/
+@import "base/base";
+
+/*-------------------------
+02. Typograph style
+-------------------------*/
+@import "base/typograph";
+
+/*-------------------------
+03. Button style
+-------------------------*/
+@import "component/button";
+
+/*-------------------------
+04. Header style
+-------------------------*/
+@import "layout/header";
+
+/*-------------------------
+05. Slider style
+-------------------------*/
+@import "layout/slider";
+
+/*-------------------------
+05. Breadcrumb style
+-------------------------*/
+@import "layout/breadcrumb";
+
+/*-------------------------
+05. About style
+-------------------------*/
+@import "layout/about";
+
+/*-------------------------
+05. Booking style
+-------------------------*/
+@import "layout/booking";
+
+/*-------------------------
+05. Portfolio style
+-------------------------*/
+@import "layout/portfolio";
+
+/*-------------------------
+05. Counter style
+-------------------------*/
+@import "layout/counter";
+
+/*-------------------------
+05. Team style
+-------------------------*/
+@import "layout/team";
+
+/*-------------------------
+05. Menu list style
+-------------------------*/
+@import "layout/menuList";
+
+/*-------------------------
+05. Blog style
+-------------------------*/
+@import "layout/blog";
+
+/*-------------------------
+05. Sidebar style
+-------------------------*/
+@import "layout/sidebar";
+
+/*-------------------------
+05. Contact style
+-------------------------*/
+@import "layout/contact";
+
+/*-------------------------
+05. Error page style
+-------------------------*/
+@import "layout/error";
+
+/*-------------------------
+05. Product style
+-------------------------*/
+@import "layout/product";
+
+/*-------------------------
+00. Footer style
+-------------------------*/
+@import "layout/footer";
