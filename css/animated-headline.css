@@ -1,18 +1,66 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+.cd-title {
+  position: relative;
+  height: 160px;
+  line-height: 230px;
+  text-align: center;
+}
+.cd-title h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+  .cd-title {
+    line-height: 250px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-title {
+    height: 200px;
+    line-height: 300px;
+  }
+  .cd-title h1 {
+    font-size: 3rem;
+  }
+}
+
+.cd-intro {
+  width: 90%;
+  max-width: 768px;
+  text-align: center;
+}
+
+.cd-intro {
+  margin: 4em auto;
+}
+@media only screen and (min-width: 768px) {
+  .cd-intro {
+    margin: 5em auto;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-intro {
+    margin: 6em auto;
+  }
+}
+
 .cd-headline {
-  text-transform: capitalize;
-  font-size: 60px;
-  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.2;
 }
 @media only screen and (min-width: 768px) {
   .cd-headline {
-    font-size: 60px;
+    font-size: 4.4rem;
     font-weight: 300;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-headline {
-    font-size: 60px;
-    font-weight: 300;
+    font-size: 6rem;
   }
 }
 
@@ -27,7 +75,6 @@
   white-space: nowrap;
   left: 0;
   top: 0;
-  font-weight: 600;
 }
 .cd-words-wrapper b.is-visible {
   position: relative;
@@ -688,7 +735,7 @@ xclip
 -------------------------------- */
 .cd-headline.clip span {
   display: inline-block;
-  padding: 0;
+  padding: .2em 0;
 }
 .cd-headline.clip .cd-words-wrapper {
   overflow: hidden;

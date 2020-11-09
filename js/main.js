@@ -40,6 +40,51 @@ All javascript and jquery plugins activation
     
     
     /*---------------------------
+    Progress line
+    ---------------------------*/
+    const progressDone = document.querySelectorAll(".progress-done");
+
+    Array.from(progressDone).forEach(function(item){
+        item.style.width = item.getAttribute('data-percent') + '%';
+        item.style.opacity = 1;
+    });
+
+    
+    /*---------------------------
+    Education slider
+    ---------------------------*/
+    $('.owl-carousel.education-slider').owlCarousel({
+        loop:true,
+        items:2,
+        margin:30,
+        dots: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items: 2
+            }
+        }
+    });
+    
+    
+    /*---------------------------
+    Portfolio slider
+    ---------------------------*/
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    
+    
+    /*---------------------------
     counter
     ---------------------------*/
     $('.counter').counterUp({
@@ -47,30 +92,51 @@ All javascript and jquery plugins activation
         time: 1000
     });
     
-
-    /*---------------------------
-    skills bar sections
-    ---------------------------*/
-    const progressLine = document.querySelectorAll('.progress-line');
-
-    progressLine.forEach(function(item){
-        item.style.width = item.getAttribute('data-percent') + '%';
-        item.style.opacity = '1';
-    });
-    
-    
     /*---------------------------
     Testimonial slider
     ---------------------------*/
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel.testi-slider').owlCarousel({
         loop:true,
+        items:1,
         margin:30,
+        nav: true,
+        navText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+        ],
+        navSpeed: false,
+        navElement: 'button type="button" role="presentation"',
+        navContainer: false,
+        navContainerClass: 'owl-nav',
+        autoplay:false,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    });
+    
+    /*---------------------------
+    Achivement slider
+    ---------------------------*/
+    $('.owl-carousel.achivement-slider').owlCarousel({
+        loop:true,
         items:3,
-        nav:false,
-        dots: true,
+        margin:30,
+        nav: true,
+        navText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+        ],
+        navSpeed: false,
+        navElement: 'button type="button" role="presentation"',
+        navContainer: false,
+        navContainerClass: 'owl-nav',
         autoplay:true,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false,
         responsive:{
             0:{
                 items:1
@@ -78,12 +144,11 @@ All javascript and jquery plugins activation
             768:{
                 items:2
             },
-            1199:{
+            1200:{
                 items:3
             }
         }
     });
-    
     
     /*---------------------------
     Scroll to top

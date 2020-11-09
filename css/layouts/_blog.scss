@@ -1,57 +1,47 @@
 .single-blog{
-    margin-top: 50px;
-    background-color: $white;
-    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
-    border-radius: 10px;
-    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 40px 25px 40px 30px;
+    border: 1px solid $borderColor;
     transition: 0.3s;
     &:hover{
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+        border: 1px solid transparent;
+        background-color: $white;
+        box-shadow: 0px 20px 45px 0px rgba(2, 4, 57, 0.12);
     }
 }
 
-.blog-thumbnail{
-    overflow: hidden;
-}
-
-.blog-content{
-    padding: 24px 16px;
-}
-
 .blog-meta{
-    margin-bottom: 5px;
     ul{
         display: flex;
-        justify-content: space-between;
         li{
-            i{
-                margin-right: 5px;
-                color: $titleColor;
+            font-size: 14px;
+            font-weight: 500;
+            color: $textColor;
+            line-height: 24px;
+            &:not(:first-child){
+                margin-left: 25px;
             }
         }
         li a{
-            text-transform: capitalize;
-            font-size: 14px;
-            font-weight: 400;
+            font-size: 16px;
+            font-weight: 600;
             color: $titleColor;
-            line-height: 27px;
+            line-height: 24px;
             transition: 0.3s;
             &:hover{
-                color: $themeColor;
+                color: $textColor;
             }
         }
     }
 }
 
 .blog-title{
-    margin-bottom: 10px;
+    margin-top: 20px;
     a{
-        text-transform: capitalize;
-        font-size: 16px;
-        font-weight: 500;
+        font-size: 24px;
+        font-weight: 700;
         color: $titleColor;
-        line-height: 27px;
+        line-height: 30px;
         transition: 0.3s;
         &:hover{
             color: $themeColor;
@@ -59,43 +49,27 @@
     }
 }
 
-.blog-text{
-    p{
-        font-size: 15px;
-        font-weight: 400;
-        color: $bodyColor;
-        line-height: 27px;
-    }
-}
-
 .blog-button{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 50px;
 }
 
-.blog-date{
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 400;
-    color: $titleColor;
-    line-height: 27px;
-    transition: 0.3s;
-    &:hover{
-        color: $themeColor;
+@include breakpointWidth(991px){
+    .blog-title{
+        margin-top: 20px;
+        a{
+            font-size: 20px;
+        }
     }
 }
 
-@include breakpointWidth(767px){
-    .blog-content{
-        text-align: center;
-    }
-
+@include breakpointWidth(480px){
     .blog-meta{
         ul{
-            justify-content: center;
+            flex-direction: column;
             li{
-                margin: 0 10px;
+                &:not(:first-child){
+                    margin-left: 0px;
+                }
             }
         }
     }

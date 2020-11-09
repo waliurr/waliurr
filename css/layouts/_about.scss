@@ -1,102 +1,294 @@
 .about-image{
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    &::before{
+    .about-img-overlay{
         position: absolute;
         z-index: -1;
         content: "";
-        top: 15px;
-        left: 15px;
-        width: 100%;
-        height: 100%;
-        background-color: #e9ecef;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background-color: $borderColor;
+        overflow: hidden;
+    }
+}
+
+.nav.nav-tabs{
+    border: 0;
+    justify-content: center;
+    .nav-item .nav-link{
+        padding: 40px 25px;
+        border: none;
+        border-bottom: 2px solid $borderColor;
+        border-radius: 0;
+        background-color: transparent;
+        font-size: 21px;
+        font-weight: 600;
+        color: $textColor;
+        line-height: 21px;
         transition: 0.3s;
-    }
-    &:hover{
-        &::before{
-            top: -10px;
-            left: -10px;
-            background-color: $themeColor;
+        &.active,
+        &:hover{
+            color: $titleColor;
+            border-bottom: 2px solid $titleColor;
         }
-        img{
-            transform: translateX(5px);
-        }
-    }
-    img{
-        width: 100%;
-        height: 100%;
     }
 }
 
+#myTabContent{
+    margin-top: 68px;
+}
+
+
+//intro style
 .about-text{
-    h2{
-        text-transform: capitalize;
-        font-size: 22px;
-        font-weight: 600;
-        color: $themeColor;
-        letter-spacing: 1px;
-        margin-bottom: 20px;
-    }
     h3{
-        font-size: 15px;
+        font-family: $quicksandFont;
+        font-size: 16px;
         font-weight: 600;
-        color: $themeColor;
-        line-height: 27px;
-        margin-bottom: 20px;
-        span{
-            color: $bodyColor;
-        }
+        color: $textColor;
+        line-height: 16px;
+        margin-bottom: 30px;
+    }
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+        color: $titleColor;
+        line-height: 26px;
+        margin-bottom: 52px;
     }
     p{
-        font-size: 14px;
-        font-weight: 400;
+        font-family: $quicksandFont;
+        font-size: 16px;
+        font-weight: 600;
         color: $textColor;
-        line-height: 27px;
-        letter-spacing: 0.5px;
+        line-height: 26px;
+        margin-bottom: 8px;
     }
 }
 
-.about-info{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.about-item{
-    p{
-        font-size: 14px;
-        font-weight: 400;
-        color: $textColor;
-        line-height: 27px;
-        span{
-            margin-left: 5px;
-        }
-    }
+.about-sign{
+    margin-top: 70px;
 }
 
 .about-button{
-    margin-top: 30px;
+    margin-top: 50px;
+    a{
+        &:first-child{
+            margin-right: 50px;
+        }
+    }
+}
+
+//expart style
+.nav.flex-column.nav-pills{
+    border: 0;
+    padding: 0 44px 0 100px;
+    .nav-link{
+        padding: 45px 30px;
+        border: none;
+        border-radius: 0;
+        background-color: #F4F7FE;
+        text-align-last: left;
+        font-size: 21px;
+        font-weight: 600;
+        color: #677091;
+        line-height: 21px;
+        transition: 0.3s;
+        &.active{
+            color: $titleColor;
+            background-color: $themeColor;
+        }
+        i{
+            margin-right: 18px;
+        }
+    }
+}
+
+//progress bar style
+.single-progress{
+    margin-bottom: 36px;
+}
+
+.progress-title{
+    margin-bottom: 38px;
+    h2{
+        font-size: 16px;
+        font-weight: 600;
+        color: $titleColor;
+        line-height: 38px;
+    }
+}
+
+.progress-line{
+    width: 100%;
+    height: 8px;
+    background-color: transparent;
+    border: 1px solid $themeColor;
+    .progress-done{
+        width: 0%;
+        height: 100%;
+        background-color: $themeColor;
+        position: relative;
+        opacity: 0;
+        span{
+            position: absolute;
+            top: -52px;
+            right: 0;
+            font-size: 16px;
+            font-weight: 600;
+            color: $titleColor;
+            line-height: 32px;
+            background-color: $themeColor;
+            padding: 0 15px;
+            &::before{
+                position: absolute;
+                content: "";
+                border-color: transparent $themeColor transparent transparent;
+                border-style: solid;
+                border-width: 0 14px 14px 0;
+                height: 0;
+                right: 0;
+                top: 100%;
+                width: 0;
+            }
+        }
+    }
+}
+
+//education style
+.single-education{
+    padding: 50px 32px;
+    border: 1px solid $borderColor;
+}
+
+.edu-top{
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.edu-icon{
+    margin-right: 30px;
+    img{
+        max-width: 60px;
+    }
+}
+
+.edu-info{
+    h2{
+        font-size: 21px;
+        font-weight: 600;
+        color: $titleColor;
+        line-height: 21px;
+        margin-bottom: 8px;
+    }
+    h3{
+        font-family: $quicksandFont;
+        font-size: 14px;
+        font-weight: 500;
+        color: $textColor;
+        line-height: 24px;
+    }
+}
+
+.edu-text{
+    h2{
+        font-size: 21px;
+        font-weight: 600;
+        color: $titleColor;
+        line-height: 21px;
+        margin-bottom: 22px;
+    }
+    p{
+        font-family: $quicksandFont;
+        font-size: 14px;
+        font-weight: 500;
+        color: $titleColor;
+        line-height: 24px;
+    }
+}
+
+.owl-carousel.education-slider{
+    .owl-dots{
+        margin-top: 30px;
+        text-align: center;
+        .owl-dot{
+            margin: 0 5px;
+            width: 14px;
+            height: 14px;
+            border: 0;
+            border-radius: 30px;
+            background-color: $borderColor;
+            &.active{
+                background-color: $titleColor !important;
+            }
+        }
+    }
+}
+
+@include breakpoint(md){
+    .edu-info h2{
+        font-size: 18px;
+    }
+    
+    .edu-text h2{
+        font-size: 16px;
+    }
 }
 
 @include breakpointWidth(1199px){
-    .about-info{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .nav.flex-column.nav-pills{
+        padding: 0 44px 0 100px;
+        .nav-link{
+            padding: 40px 15px;
+            font-size: 16px;
+        }
     }
 }
 
 @include breakpointWidth(991px){
     .about-image{
-        width: 100%;
-        margin: 0 auto 50px;
+        height: 450px;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .about-text{
+        h2{
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+
+    .single-about{
+        margin-top: 30px;
+    }
+
+    .nav.flex-column.nav-pills{
+        padding: 0;
+        .nav-link{
+            padding: 30px;
+            font-size: 18px;
+        }
+    }
+    
+    #v-pills-tabContent{
+        margin-top: 50px;
     }
 }
 
-@include breakpointWidth(767px){
-    .about-content{
-        text-align: center;
+@include breakpointWidth(480px){
+    .about-image{
+        height: 350px;
+        .about-img-overlay{
+            width: 300px;
+            height: 300px;
+        }
     }
 }

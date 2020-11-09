@@ -77,9 +77,14 @@ CSS table of content
 @import "layouts/counter";
 
 /*-------------------------
+05. Achievement style
+-------------------------*/
+@import "layouts/achievement";
+
+/*-------------------------
 05. Pricing style
 -------------------------*/
-@import "layouts/pricing";
+@import "layouts/call-to-action";
 
 /*-------------------------
 05. Portfolio style
@@ -102,24 +107,9 @@ CSS table of content
 @import "layouts/video";
 
 /*-------------------------
-05. Interests style
--------------------------*/
-@import "layouts/interest";
-
-/*-------------------------
-05. Skills style
--------------------------*/
-@import "layouts/skills";
-
-/*-------------------------
 05. Blog style
 -------------------------*/
 @import "layouts/blog";
-
-/*-------------------------
-05. Timeline style
--------------------------*/
-@import "layouts/timeline";
 
 /*-------------------------
 05. Contact style
