@@ -5,9 +5,8 @@
 ![Profile views](https://gpvc.arturio.dev/waliurr)  
 
 <h3 align="left">Social Links:</h3>
-<p align="left">
 [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/waliurr)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg' alt='facebook' height='40'>](https://www.facebook.com/waliurr00)  
-</p>
+
   
 <h3 align="left">Programming Languages:</h3>
 <p align="left"> 
@@ -22,5 +21,3 @@
 <p>&nbsp;<img align="justify" src="https://github-readme-stats.vercel.app/api/top-langs?username=waliurr&show_icons=true&locale=en&layout=compact" alt="waliurr" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=waliurr&show_icons=true&locale=en" alt="waliurr" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=waliurr&" alt="waliurr" /></p>
