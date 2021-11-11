@@ -12,7 +12,7 @@ Visit my site: <a href="https://waliurr.github.io/waliurr" target="_blank"> Clic
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=waliurr&show_icons=true)  
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=waliurr&show_icons=true&locale=en&layout=compact" alt="waliurr" /></p>
+<p>&nbsp;<img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=waliurr&show_icons=true&locale=en&layout=compact" alt="waliurr" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=waliurr&show_icons=true&locale=en" alt="waliurr" /></p>
 
