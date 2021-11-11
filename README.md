@@ -8,6 +8,6 @@ Visit my site: <a href="https://waliurr.github.io/waliurr" target="_blank"> Clic
 
 ![Profile views](https://gpvc.arturio.dev/waliurr)  
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=waliurr)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=waliurr)](https://github.com/anuraghazra/github-readme-stats)
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=waliurr&show_icons=true)  
