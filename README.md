@@ -1,10 +1,11 @@
 Waliur Rahaman | Front End Developer
 ==========================
 
-Visit My Site: <a href="https://waliurr.github.io/waliurr" target="_blank"> Click here </a>
+
 
 <h1 align="center">Hi 👋, I'm Waliur</h1>
 <h3 align="center">A passionate frontend developer from Bangladesh</h3>
+<h3 align="center">Visit My Site: <a href="https://waliurr.github.io/waliurr" target="_blank"> Click here </a></h3>
 
 ![Profile views](https://gpvc.arturio.dev/waliurr)  
 
