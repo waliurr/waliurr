@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Waliur Rahaman</h1>
+<h1>Hi 👋, I'm Waliur Rahaman</h1>
 
 - 🏢 I have completed my B.Sc in **Computer Science and Engineering** from **[DUET](https://www.duet.ac.bd/)**.
 
