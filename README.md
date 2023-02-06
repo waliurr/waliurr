@@ -2,7 +2,7 @@
 
 - 🏢 I have completed my B.Sc in **Computer Science and Engineering** from **[DUET](https://www.duet.ac.bd/)**.
 
-- 🏢 I am learning **JavaScript, Node.js, blockchain, php, laravel**.
+- 🏢 I am learning **JavaScript, Node.js, Blockchain, php, laravel**.
 
 - 🔗 Reach me at web: **[waliurr.github.io/waliurr](https://waliurr.github.io/waliurr/)**
 
