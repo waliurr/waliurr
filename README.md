@@ -2,7 +2,9 @@
 
 - 🏢 I have completed my B.Sc in **Computer Science and Engineering** from **[DUET](https://www.duet.ac.bd/)**.
 
-- 🏢 I am learning **JavaScript, Node.js, Blockchain, php, laravel**.
+- 🏢 I am learning **Node.js, Mongodb**.
+
+- 🏢 My Skills: **HTML5, CSS3, Bootstrap, Woordpress, php, Javascript, React js, Next js, Blockchain, Solidity, Smart contract, Token presale, NFT minting**.
 
 - 🔗 Reach me at web: **[waliurr.github.io/waliurr](https://waliurr.github.io/waliurr/)**
 
